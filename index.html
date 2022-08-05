@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="control panel">
+    <title>Control Panel </title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: pink;
+
+        }
+
+        button {
+            border-radius: 100%;
+            border: none;
+            outline: none;
+            padding: 16px;
+            margin-bottom: 12px;
+            margin-top: 12px;
+            margin-right: 12px;
+            margin-left: 12px;
+            background-color: white;
+            box-shadow: 3px 3px 7px rgb(218, 78, 143);
+
+        }
+
+        svg {
+            fill: white;
+            width: 64px;
+            height: 64px;
+        }
+
+        .middle {
+            padding: 5%;
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+
+        .power {
+            background-color: rgb(242, 74, 74);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="middle">
+        <section>
+            <button id="forward">
+                <img src="assets/up.svg" alt="up button" />
+
+            </button>
+
+        </section>
+        <p>
+
+        </p>
+        <section>
+            <button id="left">
+                <img src="assets/left.svg" alt="left button" />
+            </button>
+            <button class="power" id="onoff">
+                <img src="assets/on_off.svg" alt="on/ off button" />
+            </button>
+            <button id="right">
+                <img src="assets/right.svg" alt="right button" />
+            </button>
+        </section>
+        <p>
+
+        </p>
+        <section>
+            <button id="backward">
+                <img src="assets/down.svg" alt="down button" />
+            </button>
+        </section>
+    </div>
+</body>
+<script>
+    const forward_button = document.getElementById('forward');
+    const left_button = document.getElementById('left');
+    const on_off_button = document.getElementById('onoff');
+    const right_button = document.getElementById('right');
+    const backward_button = document.getElementById('backward');
+
+    const power = () =>{
+        
+
+    };
+
+    forward_button.addEventListener('click', forward);
+
+</script>
+
+</html>
